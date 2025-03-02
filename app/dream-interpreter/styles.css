@@ -1,0 +1,73 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Widget Container */
+.widget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  max-width: 800px; /* Added for better responsive design */
+  margin: 0 auto; /* Ensures centering on larger screens */
+}
+
+/* Footer Link */
+footer a {
+  color: #00FF00;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 20px;
+  display: inline-block; /* Added for better clickability */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .widget-container {
+    height: 50vh; /* Adjusted for smaller screens */
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 16px;
+  }
+
+  .widget-container {
+    height: 40vh; /* Adjusted for mobile screens */
+  }
+}
